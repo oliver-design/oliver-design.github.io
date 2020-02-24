@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Enriqueta&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    background-image: url("pexels-photo-1054222.jpeg");
+    
+    background-color: rgb(206, 240, 240);
+    
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: 'Enriqueta', serif;
+    font-family: 'Electrolize', sans-serif;
+}
+
+p {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em 3em;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    padding-right: 1em;
+    margin-top: -1.5em;
+    width: 2em;
+}
+
+.profile-pic {
+    width: 50%;
+    margin: 2em;
+    border-radius: 15px;
+}
+
+
+h1, .text {
+    position: relative;
+    z-index: 3;
+}
+
+
+h1 {
+    font-size: 6vw;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+.blue-box {
+    margin: 0 auto;
+    width: 80%;
+    background: rgba(206, 213, 249, 0.678);
+    border-radius: 35px;
+}
+
+.contact {
+    display: initial;
+    padding: 2em;
+
+}
+
+.projects {
+  text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    list-style: none;
+  }
+
+  .flex-item {
+    background: rgba(206, 213, 249, 0.678);;
+    padding: 10px;
+    width: 65%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 35px;
+    font-size: 1em;
+    text-align: center;
+  }
+
+.cta {
+    background: #EDF5FF;
+    width: calc(100% - 1em );
+    max-width: 200px;
+    display: block;
+    color: black ;
+    border-radius: 10px;
+    padding: .8em;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 5% auto 5% ;
+    position: relative;
+    z-index: 4;
+    border: 1px solid rgb(148, 144, 144);
+}
+
+.cta:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+footer {
+    background: rgba(217, 170, 165, 0.555);
+    padding: 1em 3em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#ig-icon {
+    width: 3em;
+}
+#linkedin-icon {
+    width: 3em;
+}
+#facebook-icon {
+    width: 3em;
+}
+
+.ig-icon {    
+    width: 3em;
+}
+
+.linkedin-icon {    
+    width: 3em;
+    border-radius: 8px;
+}
+
+.facebook-icon {    
+    width: 3em;
+}
+
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: #86B3EC;
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1.3em 3em;
+    background-color: #93C2FF;
+}
+
+nav ul li a:hover{
+    background-color: #B7D6FF;
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -2em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px) {
+        
+    .menu {
+        width: 2.5em;
+    }
+
+    .text {
+        font-size: 1.3em;
+    }
+
+    
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2em;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    .profile-pic {
+        width: 350px;
+    }
+
+    
+    .project-pic {
+        width: 450px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 1em;
+        list-style: none;
+      }
+        
+    .flex-item {
+        background: rgba(206, 213, 249, 0.678);;
+        padding: 2vw;
+        width: 40vw;
+        margin-top: 5vw;
+        border-radius: 35px;
+        text-align: center;
+    }
+
+    .ig-icon {    
+        width: 5em;
+    }
+    
+    .linkedin-icon {    
+        width: 5em;
+        border-radius: 8px;
+    }
+    
+    .facebook-icon {    
+        width: 5em;
+    }
+
+    .cta {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        width: 40%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+
+    .hide-desktop {
+        display: none;
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+
+    nav ul {
+        font-size: 1.5vw;
+        position: relative;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        width: inherit;
+        background-color: initial;
+        text-align: center;
+        display: flex;
+        padding: 1em 4em;
+    }
+    
+
+    nav ul li a:hover{
+        background-color: rgba(179, 167, 250, 0.5);
+        border-radius: 20px;
+    }
+
+    .flex-item {
+        font-size: 2vw;
+    }
+
+    #ig-icon {
+        width: 6vw;
+    }
+    #linkedin-icon {
+        width: 6vw;
+    }
+    #facebook-icon {
+        width: 6vw;
+    }
+
+
+
+}

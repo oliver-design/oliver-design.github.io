@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title> 
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="#" class="hide-desktop">
+            <img src="Hamburger_icon.svg.png" alt="toggle menu" class="menu" id="menu">
+          </a>
+
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop"><img src="cross-small-01-512.png" alt="exit menu"></li>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="projektit.html">Projektit</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          </ul>
+
+        </nav>
+      </header>
+
+      <section>
+        <h1>Projektit</h1>
+      </section>
+    </div>
+
+
+        <ul class="flex-container">
+          <li class="projects"> <img src="testi-kuva-2.jpg" alt="project-picture" class="flex-item"> </li>
+          <li class="flex-item">
+            <p> Jukolan talo, eteläisessä Hämeessä, seisoo erään mäen pohjaisella rinteellä, liki Toukolan kylää. Sen läheisin ympäristö on kivinen tanner, mutta alempana alkaa pellot, joissa, ennenkuin talo oli häviöön mennyt, aaltoili teräinen vilja. </p>
+          </li>
+        </ul>
+
+        
+        <ul class="flex-container">
+          <li class="projects"> <img src="testi-kuva-2.jpg" alt="project-picture" class="flex-item"> </li>
+          <li class="flex-item">
+            <p> Jukolan talo, eteläisessä Hämeessä, seisoo erään mäen pohjaisella rinteellä, liki Toukolan kylää. Sen läheisin ympäristö on kivinen tanner, mutta alempana alkaa pellot, joissa, ennenkuin talo oli häviöön mennyt, aaltoili teräinen vilja. </p>
+          </li>
+        </ul>
+
+
+        <ul class="flex-container">
+          <li class="flex-item">1</li>
+          <li class="flex-item">2</li>
+        </ul>
+    
+
+
+    <div class="container">
+      <a href="#top" class="cta">Takaisin ylös</a>
+    </div>
+
+      
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="ig-icon-5.png" class="ig-icon" alt="ig icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="linkedin-icon.svg" class="linkedin-icon" alt="linkedin icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="facebook-icon-4.png" class="facebook-icon" alt="facebook icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script>
+    
+      var menu = document.getElementById('menu');
+      var nav= document.getElementById('nav');
+      
+      menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+      });
+
+      exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+      });
+
+
+
+
+    
+    </script>
+
+
+  </body>
+
+</html>
+
